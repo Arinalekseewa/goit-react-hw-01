@@ -1,16 +1,20 @@
 import PropTypes from "prop-types";
-
+import styles from "./FriendList.module.css";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
-    return (
-      <><div>
-            <img src={avatar} alt={name} width="48" />
-            <p>{name}</p>
-            <p><span
-                    className={`w-4 h-4 rounded-full ${isOnline ? "bg-green-500" : "bg-red-500"}`}
-                ></span></p>
-        </div>
-        </>
+  return (
+    <li className={styles['friend-card']}>
+      
+      <img
+        src={avatar}
+        alt={name}
+        className={styles['friend-avatar']}
+      />
+      <p className={styles['friend-name']}>{name}</p>
+      <span
+        className={`w-4 h-4 ${isOnline ? "bg-green-500" : "bg-red-500"}`}
+      ></span>
+    </li>
   );
 };
 
@@ -22,12 +26,10 @@ FriendListItem.propTypes = {
 
 const FriendList = ({ friends }) => {
   return (
-      <ul>
-          <li>
-              {friends.map(({ id, avatar, name, isOnline }) => (
+    <ul className={styles['friends-list']}>
+      {friends.map(({ id, avatar, name, isOnline }) => (
         <FriendListItem key={id} avatar={avatar} name={name} isOnline={isOnline} />
-      ))};
-          </li>
+      ))}
     </ul>
   );
 };

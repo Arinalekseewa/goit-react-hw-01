@@ -7,7 +7,7 @@ export default function Profile({ name, tag, location, image, stats }) {
     <div className={styles.profile}>
       <div className={styles['profile-info']}>
         <img src={image} alt={name} />
-        <h2>{name}</h2>
+        <p>{name}</p>
         <p>@{tag}</p>
         <p>{location}</p>
       </div>
