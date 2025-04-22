@@ -2,7 +2,7 @@ import Profile from "../Profile/Profile";
 import userData from "../../jsonData.json";
 import "./App.module.css";
 import React from 'react';
-import friendsData from "D:/Projects/goit-react-hw-01/src/friendsData.json";
+import friendsData from "../../friendsData.json";
 import FriendList from "../FriendList/FriendList";
 
 const App = () => {
