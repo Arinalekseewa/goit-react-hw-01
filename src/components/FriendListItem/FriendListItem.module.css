@@ -1,0 +1,50 @@
+.friend-card {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.friend-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.friend-name {
+    flex-grow: 1;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+}
+
+.status-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.status-indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+.status-text {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.online {
+    color: #4caf50;
+}
+
+.offline {
+    color: #f44336;
+}

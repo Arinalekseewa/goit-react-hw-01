@@ -1,10 +1,10 @@
 import React from 'react';
-import Profile from "../Profile/Profile";
+import styles from "./App.module.css"; 
 import userData from "../../jsonData.json";
 import friendsData from "../../friendsData.json";
-import FriendList from "../FriendList/FriendList";
-import styles from "./App.module.css"; 
 import transactions from "../../transactions.json";
+import Profile from "../Profile/Profile";
+import FriendList from "../FriendList/FriendList";
 import TransactionHistory from "../TransactionHistory/TransactionHistory";
 
 const App = () => {
